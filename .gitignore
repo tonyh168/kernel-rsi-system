@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+runs/
+*.pyc
+examples/sim_repository/
+artifacts/**/*.ncu-rep
+artifacts/**/*.sqlite
+artifacts/**/*.db

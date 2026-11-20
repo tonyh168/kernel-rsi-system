@@ -1,0 +1,170 @@
+[
+  {
+    "technique_id": "mem.swizzled_shared_layout",
+    "family": "memory_access",
+    "description": "Reorder shared-memory layout (e.g. XOR swizzle or padding) to remove bank conflicts.",
+    "aliases": ["shared_mem_padding", "bank_conflict_fix"],
+    "applies_when": {"bottleneck": "memory", "needs_shared_memory": true}
+  },
+  {
+    "technique_id": "mem.async_pipeline",
+    "family": "memory_access",
+    "description": "Overlap global loads with compute via async copy / multi-stage pipelining.",
+    "aliases": ["async_copy", "software_pipeline"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "mem.coalesced_access",
+    "family": "memory_access",
+    "description": "Restructure index order so adjacent threads touch adjacent addresses.",
+    "aliases": ["coalesce"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "mem.vectorized_load",
+    "family": "memory_access",
+    "description": "Increase per-thread transaction width (e.g. 4-element vector loads).",
+    "aliases": ["vectorize_load", "128bit_load"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "mem.cache_operand",
+    "family": "memory_access",
+    "description": "Stage a reused operand in shared memory or registers instead of reloading.",
+    "aliases": ["cache_read"],
+    "applies_when": {"bottleneck": "memory", "has_reuse": true}
+  },
+  {
+    "technique_id": "launch.num_warps",
+    "family": "launch_config",
+    "description": "Tune warps per program/block to trade occupancy against register pressure.",
+    "aliases": ["num_warps_8", "block_threads"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "launch.num_stages",
+    "family": "launch_config",
+    "description": "Tune software pipeline depth.",
+    "aliases": ["stages_3"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "launch.block_size",
+    "family": "launch_config",
+    "description": "Tune per-program tile size (BLOCK_M/BLOCK_N/BLOCK_K style constants).",
+    "aliases": ["tile_size", "block_m_n_k"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "sched.persistent_grid",
+    "family": "scheduling",
+    "description": "Launch one persistent program per SM that loops over tiles, removing launch overhead and tail effect.",
+    "aliases": ["persistent_kernel", "persistent_cta"],
+    "applies_when": {"bottleneck": "launch"}
+  },
+  {
+    "technique_id": "sched.split",
+    "family": "scheduling",
+    "description": "Split a loop dimension into outer/inner to expose parallelism or locality (TVM SP).",
+    "aliases": ["split"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "sched.reorder",
+    "family": "scheduling",
+    "description": "Reorder loop nest to improve access locality (TVM RE).",
+    "aliases": ["reorder"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "sched.fuse",
+    "family": "scheduling",
+    "description": "Fuse adjacent loops to reduce passes over memory (TVM FU).",
+    "aliases": ["fuse"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "sched.unroll",
+    "family": "scheduling",
+    "description": "Unroll a loop to amortize branch and indexing overhead (TVM AN/Pragma).",
+    "aliases": ["unroll_8"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "sched.compute_at",
+    "family": "scheduling",
+    "description": "Inline a producer stage at a chosen loop level to keep data in registers/shared memory (TVM CA).",
+    "aliases": ["compute_at"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "sched.compute_inline",
+    "family": "scheduling",
+    "description": "Inline a producer entirely, removing an intermediate buffer (TVM CI).",
+    "aliases": ["compute_inline"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "sched.rfactor",
+    "family": "scheduling",
+    "description": "Split a reduction into per-thread partials plus a cross-thread reduction (TVM RF).",
+    "aliases": ["rfactor", "split_reduction"],
+    "applies_when": {"has_reduction": true}
+  },
+  {
+    "technique_id": "sched.storage_align",
+    "family": "scheduling",
+    "description": "Pad/align a buffer so rows start on a transaction boundary (TVM SA).",
+    "aliases": ["storage_align"],
+    "applies_when": {"bottleneck": "memory"}
+  },
+  {
+    "technique_id": "algo.two_pass",
+    "family": "algorithm",
+    "description": "Replace a single-pass approach with two passes (e.g. count then write) to remove atomics or reduce divergence.",
+    "aliases": ["two_pass_reduction"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "algo.atomic_free_reduce",
+    "family": "algorithm",
+    "description": "Remove atomic contention by per-warp partials followed by a deterministic combine.",
+    "aliases": ["reduce_atomic", "atomic_add_removal"],
+    "applies_when": {"has_reduction": true}
+  },
+  {
+    "technique_id": "algo.skip_mask_branch",
+    "family": "algorithm",
+    "description": "Specialize a fast path for full tiles so the masked path is skipped.",
+    "aliases": ["mask_free_path", "skip_tail"],
+    "applies_when": {}
+  },
+  {
+    "technique_id": "algo.split_k",
+    "family": "algorithm",
+    "description": "Split the K dimension across programs and reduce partially to increase parallelism.",
+    "aliases": ["split_k", "stream_k"],
+    "applies_when": {"has_reduction": true}
+  },
+  {
+    "technique_id": "algo.warp_specialize",
+    "family": "algorithm",
+    "description": "Assign distinct roles to producer and consumer warps.",
+    "aliases": ["warp_specialization"],
+    "applies_when": {"vendor": ["nvidia"]}
+  },
+  {
+    "technique_id": "algo.tensor_core",
+    "family": "algorithm",
+    "description": "Map the inner product onto matrix/tensor core instructions.",
+    "aliases": ["mma", "wgmma", "dot"],
+    "applies_when": {"bottleneck": "compute"}
+  },
+  {
+    "technique_id": "algo.reduce_work",
+    "family": "algorithm",
+    "description": "Remove redundant computation outright; a semantic change, ablate before trusting it.",
+    "aliases": ["reduce_work", "remove_redundant_work"],
+    "applies_when": {}
+  }
+]

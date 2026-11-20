@@ -1,0 +1,22 @@
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+../flagos/lib/python3.12/site-packages/torch/jit/_script.py:366: 14 warnings
+  /flagos/lib/python3.12/site-packages/torch/jit/_script.py:366: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+../flagos/lib/python3.12/site-packages/torchvision/io/image.py:14
+  /flagos/lib/python3.12/site-packages/torchvision/io/image.py:14: UserWarning: Failed to load image Python extension: 'Could not load this library: /flagos/lib/python3.12/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+    warn(
+
+../flagos/lib/python3.12/site-packages/flashinfer/gdn_prefill.py:27
+  /flagos/lib/python3.12/site-packages/flashinfer/gdn_prefill.py:27: UserWarning: fla package is not installed, gdn_prefill module will not be available. Install via: pip install flash_linear_attention-*.whl
+    warnings.warn(
+
+../opt/flagtree/triton/runtime/autotuner.py:127
+../opt/flagtree/triton/runtime/autotuner.py:127
+../opt/flagtree/triton/runtime/autotuner.py:127
+  /opt/flagtree/triton/runtime/autotuner.py:127: DeprecationWarning: warmup, rep, and use_cuda_graph parameters are deprecated. See https://github.com/triton-lang/triton/pull/4496 for details.
+    warnings.warn(("warmup, rep, and use_cuda_graph parameters are deprecated. See "
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 444 deselected, 19 warnings in 6.63s

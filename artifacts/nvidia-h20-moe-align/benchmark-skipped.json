@@ -1,0 +1,7 @@
+{
+  "moe_align_block_size_triton": {
+    "result": "skipped",
+    "test_case": "benchmark/test_moe_align_block_size_triton.py::test_moe_align_block_size_triton",
+    "reason": "Skipped: vllm not installed"
+  }
+}

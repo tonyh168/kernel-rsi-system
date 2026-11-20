@@ -1,0 +1,41 @@
+diff --git a/src/flaggems_vllm/ops/flashmla_sparse.py b/src/flaggems_vllm/ops/flashmla_sparse.py
+index 1715f28..8801bd6 100644
+--- a/src/flaggems_vllm/ops/flashmla_sparse.py
++++ b/src/flaggems_vllm/ops/flashmla_sparse.py
+@@ -117,7 +117,8 @@ def triton_flash_mla_sparse_fwd(
+     acc0 = tl.zeros([BH, BDP], dtype=tl.float32)
+     acc1 = tl.zeros([BH, BDP], dtype=tl.float32)
+ 
+-    topk_len = tl.load(topk_length_ptr) if HAVE_TOPK_LENGTH else TOPK
++    # The dynamic count must never read beyond the physical indices row.
++    topk_len = tl.minimum(tl.load(topk_length_ptr), TOPK) if HAVE_TOPK_LENGTH else TOPK
+     NK = tl.cdiv(topk_len, BK)
+     for ck in range(NK):
+         # step1: load indices
+@@ -218,7 +219,7 @@ if HAS_TLE_FLASHMLA_SPARSE:
+         HAVE_TAIL: tl.constexpr,
+         BK: tl.constexpr,
+     ):
+-        topk_len = tl.load(topk_len_ptr) if HAVE_TOPK_LENGTH else TOPK
++        topk_len = tl.minimum(tl.load(topk_len_ptr), TOPK) if HAVE_TOPK_LENGTH else TOPK
+         max_col = SKV - 1
+         stride_kvn: tl.constexpr = VG * (TD + D)
+         NK = tl.cdiv(topk_len, BK)
+@@ -391,7 +392,7 @@ if HAS_TLE_FLASHMLA_SPARSE:
+         TDP: tl.constexpr,
+         G: tl.constexpr,
+     ):
+-        topk_len = tl.load(topk_len_ptr) if HAVE_TOPK_LENGTH else TOPK
++        topk_len = tl.minimum(tl.load(topk_len_ptr), TOPK) if HAVE_TOPK_LENGTH else TOPK
+         offs_h = tl.arange(0, BH)
+         offs_dh = tl.arange(0, DPH)
+         mask_h = h_base + offs_h < G
+@@ -550,7 +551,7 @@ if HAS_TLE_FLASHMLA_SPARSE:
+         TDP: tl.constexpr,
+         G: tl.constexpr,
+     ):
+-        topk_len = tl.load(topk_len_ptr) if HAVE_TOPK_LENGTH else TOPK
++        topk_len = tl.minimum(tl.load(topk_len_ptr), TOPK) if HAVE_TOPK_LENGTH else TOPK
+         offs_h = tl.arange(0, BH)
+         offs_dh = tl.arange(0, DPH)
+         mask_h = h_base + offs_h < G

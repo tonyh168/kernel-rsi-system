@@ -1,0 +1,28 @@
+{
+  "run_id": "local-sim",
+  "mode": "simulated",
+  "operator": "sim_copy",
+  "repository": "/Users/baai/Desktop/rsi-projs/flaggems-kernel-rsi/examples/sim_repository",
+  "base_revision": "HEAD",
+  "allowed_files": ["kernel.py"],
+  "workloads": [
+    {"workload_id": "small", "shapes": [[64]], "role": "target"},
+    {"workload_id": "large", "shapes": [[256]], "role": "guard"}
+  ],
+  "evaluation": {
+    "protocol_version": "sim-v1",
+    "warmup": 1,
+    "repeats": 3,
+    "min_speedup": 1.01,
+    "max_guard_regression": 0.05,
+    "noise_multiplier": 1.0,
+    "timeout_seconds": 30
+  },
+  "agent": {
+    "model": "claude-opus-5",
+    "max_turns": 12,
+    "max_budget_usd": 5,
+    "max_iterations": 5,
+    "auto_promote": false
+  }
+}

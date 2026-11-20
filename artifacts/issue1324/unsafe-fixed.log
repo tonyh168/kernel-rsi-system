@@ -1,0 +1,6 @@
+/flagos/lib/python3.12/site-packages/torchvision/io/image.py:14: UserWarning: Failed to load image Python extension: 'Could not load this library: /flagos/lib/python3.12/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/flagos/lib/python3.12/site-packages/flashinfer/gdn_prefill.py:27: UserWarning: fla package is not installed, gdn_prefill module will not be available. Install via: pip install flash_linear_attention-*.whl
+  warnings.warn(
+q=(4096, 64, 576) kv=(16384, 1, 576) indices=(4096, 1, 2048) topk_length=4096 (TOPK=2048)
+OK out=(4096, 64, 512) lse=(4096, 64)

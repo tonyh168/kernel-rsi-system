@@ -1,0 +1,1871 @@
+{
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-None-False-2]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 2
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-1024-True-None-False-2]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 1024,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 2
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-device_mesh-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": "device_mesh",
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-distributed_barrier-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": "distributed_barrier",
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-gpu.alloc-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": "gpu.alloc",
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-gpu.local_ptr-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": "gpu.local_ptr",
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-False-None-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": false,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-512-True-None-True-2]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": true,
+      "expected_tle_calls": 2
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[False-True-512-True-None-False-0]": {
+    "params": {
+      "has_tle": false,
+      "is_cuda": true,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-False-512-True-None-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": false,
+      "num_experts": 512,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_tle_backend_dispatch[True-True-1025-True-None-False-0]": {
+    "params": {
+      "has_tle": true,
+      "is_cuda": true,
+      "num_experts": 1025,
+      "has_query": true,
+      "unsupported": null,
+      "tle_failure": false,
+      "expected_tle_calls": 0
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[remote-None-0-False-128]": {
+    "params": {
+      "unsupported": "remote",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": false,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[remote-None-0-False-4096]": {
+    "params": {
+      "unsupported": "remote",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": false,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[remote-None-0-True-128]": {
+    "params": {
+      "unsupported": "remote",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": true,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[remote-None-0-True-4096]": {
+    "params": {
+      "unsupported": "remote",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": true,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[shard_id-None-0-False-128]": {
+    "params": {
+      "unsupported": "shard_id",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": false,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[shard_id-None-0-False-4096]": {
+    "params": {
+      "unsupported": "shard_id",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": false,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[shard_id-None-0-True-128]": {
+    "params": {
+      "unsupported": "shard_id",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": true,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[shard_id-None-0-True-4096]": {
+    "params": {
+      "unsupported": "shard_id",
+      "error": null,
+      "cluster_calls": 0,
+      "supports_cluster": true,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-None-2-False-128]": {
+    "params": {
+      "unsupported": null,
+      "error": null,
+      "cluster_calls": 2,
+      "supports_cluster": false,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-None-2-False-4096]": {
+    "params": {
+      "unsupported": null,
+      "error": null,
+      "cluster_calls": 2,
+      "supports_cluster": false,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-None-2-True-128]": {
+    "params": {
+      "unsupported": null,
+      "error": null,
+      "cluster_calls": 2,
+      "supports_cluster": true,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-None-2-True-4096]": {
+    "params": {
+      "unsupported": null,
+      "error": null,
+      "cluster_calls": 2,
+      "supports_cluster": true,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-ordinary compilation failure-2-False-128]": {
+    "params": {
+      "unsupported": null,
+      "error": "ordinary compilation failure",
+      "cluster_calls": 2,
+      "supports_cluster": false,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-ordinary compilation failure-2-False-4096]": {
+    "params": {
+      "unsupported": null,
+      "error": "ordinary compilation failure",
+      "cluster_calls": 2,
+      "supports_cluster": false,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-ordinary compilation failure-2-True-128]": {
+    "params": {
+      "unsupported": null,
+      "error": "ordinary compilation failure",
+      "cluster_calls": 2,
+      "supports_cluster": true,
+      "num_tokens": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_cluster_capability_is_independent[None-ordinary compilation failure-2-True-4096]": {
+    "params": {
+      "unsupported": null,
+      "error": "ordinary compilation failure",
+      "cluster_calls": 2,
+      "supports_cluster": true,
+      "num_tokens": 4096
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-0-0-10]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 0,
+      "num_blocks": 0,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-0-0-250]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 0,
+      "num_blocks": 0,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-0-0-512]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 0,
+      "num_blocks": 0,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-150-9-10]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 150,
+      "num_blocks": 9,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-150-9-250]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 150,
+      "num_blocks": 9,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[0-150-9-512]": {
+    "params": {
+      "num_routes": 0,
+      "num_sorted": 150,
+      "num_blocks": 9,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1-16-1-10]": {
+    "params": {
+      "num_routes": 1,
+      "num_sorted": 16,
+      "num_blocks": 1,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1-16-1-250]": {
+    "params": {
+      "num_routes": 1,
+      "num_sorted": 16,
+      "num_blocks": 1,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1-16-1-512]": {
+    "params": {
+      "num_routes": 1,
+      "num_sorted": 16,
+      "num_blocks": 1,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1280-8960-560-10]": {
+    "params": {
+      "num_routes": 1280,
+      "num_sorted": 8960,
+      "num_blocks": 560,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1280-8960-560-250]": {
+    "params": {
+      "num_routes": 1280,
+      "num_sorted": 8960,
+      "num_blocks": 560,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_nonzero_launch_extents[1280-8960-560-512]": {
+    "params": {
+      "num_routes": 1280,
+      "num_sorted": 8960,
+      "num_blocks": 560,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_empty_compact_graph[10-16-dtype0]": {
+    "params": {
+      "num_experts": 10,
+      "block_size": 16,
+      "dtype": "torch.int32"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_empty_compact_graph[10-16-dtype1]": {
+    "params": {
+      "num_experts": 10,
+      "block_size": 16,
+      "dtype": "torch.int64"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_empty_compact_graph[512-64-dtype0]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "dtype": "torch.int32"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_moe_align_empty_compact_graph[512-64-dtype1]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "dtype": "torch.int64"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape0-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        0,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape1-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape2-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        1024,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape3-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        6152,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape4-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        11575,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-16-10]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-16-128]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-16-250]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-16-512]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 16,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-32-10]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-32-128]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-32-250]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-32-512]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 32,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-64-10]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 10
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-64-128]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 128
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-64-250]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 250
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size[topk_ids_shape5-64-512]": {
+    "params": {
+      "topk_ids_shape": [
+        16384,
+        10
+      ],
+      "block_size": 64,
+      "num_experts": 512
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape0]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        16384,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape1]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        6152,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape2]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        4727,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape3]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        1905,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape4]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        11575,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape5]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        1032,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape6]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        4201,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape7]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        2056,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape8]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        7561,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape9]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        4104,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_triton[512-64-topk_ids_shape10]": {
+    "params": {
+      "num_experts": 512,
+      "block_size": 64,
+      "topk_ids_shape": [
+        14281,
+        10
+      ]
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size_triton"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_fast_paths[singleton]": {
+    "params": {
+      "fast_path": "singleton"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size"
+    ],
+    "reason": null
+  },
+  "tests/test_moe_align_block_size.py::test_accuracy_moe_align_block_size_fast_paths[small_grouped]": {
+    "params": {
+      "fast_path": "small_grouped"
+    },
+    "result": "passed",
+    "opname": [
+      "moe_align_block_size"
+    ],
+    "reason": null
+  }
+}

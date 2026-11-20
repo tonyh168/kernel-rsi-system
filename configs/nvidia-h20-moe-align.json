@@ -1,0 +1,25 @@
+{
+  "profile_id": "nv-h20-2",
+  "vendor": "nvidia",
+  "host_alias": "nv-h20",
+  "device_index": 2,
+  "device_name": "NVIDIA H20-3e",
+  "software": {
+    "repository": "git@github.com:tonyh168/FlagGems-vllm.git",
+    "revision": "af184e5731c814883659f2e855209e14c349383d",
+    "python": "3.12.12",
+    "torch": "2.9.0+cu128",
+    "flag_gems": "5.4.0"
+  },
+  "monitoring_tool": "nvidia-smi",
+  "profiler_tools": ["/usr/local/bin/proton", "/usr/local/cuda/bin/ncu"],
+  "profiler_verified": false,
+  "operator": "moe_align_block_size",
+  "test": "tests/test_moe_align_block_size.py --quick",
+  "benchmark": "benchmark/test_moe_align_block_size_triton.py --level core --mode kernel",
+  "iterations": 10,
+  "warmup": 5,
+  "record_syntax": "--record json --output <path>",
+  "metrics": "latency",
+  "note": "Device and profiler binary discovered; profiler_verified remains false until a real trace is collected. Effective bandwidth/FLOP rates must be calibrated before roofline claims."
+}

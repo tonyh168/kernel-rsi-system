@@ -1,0 +1,5 @@
+kb.db
+kb.db-wal
+kb.db-shm
+__pycache__/
+.pytest_cache/

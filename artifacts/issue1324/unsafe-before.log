@@ -1,0 +1,44 @@
+/flagos/lib/python3.12/site-packages/torchvision/io/image.py:14: UserWarning: Failed to load image Python extension: 'Could not load this library: /flagos/lib/python3.12/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/flagos/lib/python3.12/site-packages/flashinfer/gdn_prefill.py:27: UserWarning: fla package is not installed, gdn_prefill module will not be available. Install via: pip install flash_linear_attention-*.whl
+  warnings.warn(
+q=(4096, 64, 576) kv=(16384, 1, 576) indices=(4096, 1, 2048) topk_length=4096 (TOPK=2048)
+[08:07:55.582][MXC][E]xnack(0x8): kernel causes atu address translation error
+[08:07:55.582][MCR][E]mx_trapProcess.cpp       :130 : trapping pipeID=0,queueID=0!
+[08:07:55.582][MCR][E]mx_trapProcess.cpp       :131 : trapping virtualDevice=0x7f6c9c000c70!
+[08:07:55.585][MCR][E]mx_trapProcess.cpp       :998 : Node ID is 2, Wave ID is -2
+[08:07:55.585][MCR][E]mx_trapProcess.cpp       :1021: debug info: 0x5c,0x80,0x1f,0x08,0x00,0x00,0x21,0x3e,0xdc,0x80,0x0c,0x08,0x00,0x8e,0x21,0x3e,
+[08:07:55.585][MCR][E]mx_device.cpp            :10571: trap:precise positioning.
+[08:07:55.585][MCR][E]mx_device.cpp            :10576: trapping: kernelName: triton_flash_mla_sparse_fwd ,commandIndex: 7 , trapType: Xnack Error/ATU Fault(0x8)
+[08:07:55.586][MCR][E]mx_trapProcess.cpp       :918 : Xnack(0x8) exception happened in the shader, the mcruntime api will be disabled
+[08:07:56.002][MCR][E]mc_runtime_api.cpp       :215 : 779  : [7f6fa7cc1740] mcGetDevice: Returned mcErrorIllegalAddress
+Traceback (most recent call last):
+  File "/flagos/lib/python3.12/site-packages/torch/cuda/__init__.py", line 1185, in synchronize
+    return torch._C._cuda_synchronize()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/repro_sparse_mla_crash.py", line 77, in <module>
+    main()
+  File "/work/repro_sparse_mla_crash.py", line 72, in main
+    torch.cuda.synchronize()
+  File "/flagos/lib/python3.12/site-packages/torch/cuda/__init__.py", line 1184, in synchronize
+    with torch.cuda.device(device):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/flagos/lib/python3.12/site-packages/torch/cuda/__init__.py", line 562, in __exit__
+    self.idx = torch.cuda._maybe_exchange_device(self.prev_idx)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

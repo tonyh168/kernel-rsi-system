@@ -1,0 +1,33 @@
+repository_revision=af184e5731c814883659f2e855209e14c349383d
+repository_status=1
+python=Python 3.12.12
+torch=2.9.0+cu128
+triton=3.5.0
+flag_gems=5.4.0
+ncu=Version 2025.1.1.0 (build 35528883) (public-release)
+gpu=0, NVIDIA H20-3e, 580.95.05, 143771 MiB
+1, NVIDIA H20-3e, 580.95.05, 143771 MiB
+2, NVIDIA H20-3e, 580.95.05, 143771 MiB
+3, NVIDIA H20-3e, 580.95.05, 143771 MiB
+4, NVIDIA H20-3e, 580.95.05, 143771 MiB
+5, NVIDIA H20-3e, 580.95.05, 143771 MiB
+6, NVIDIA H20-3e, 580.95.05, 143771 MiB
+7, NVIDIA H20-3e, 580.95.05, 143771 MiB
+{
+  "moe_align_block_size_triton": {
+    "result": "skipped",
+    "test_case": "benchmark/test_moe_align_block_size_triton.py::test_moe_align_block_size_triton",
+    "reason": "Skipped: vllm not installed"
+  }
+}........................................................................ [ 56%]
+........................................................                 [100%]
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /usr/local/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+128 passed, 1 warning in 30.42s
